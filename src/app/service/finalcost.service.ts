@@ -13,7 +13,6 @@ export class FinalcostService {
 
   constructor( private http: HttpClient ) { }
 
-  getFinalcostList(): Observable<any>{
-    return this.http.get(`${this.baseURL}`)
-  }
+
+  
 }

@@ -12,7 +12,23 @@ export class RatetermService {
 
   constructor( private http: HttpClient ) { }
 
-  getRatetermList(): Observable<any>{
-    return this.http.get(`${this.baseURL}`)
+  createRateTerm(rateTerm: Object): Observable<Object>{
+    return this.http.post(`${this.baseURL}`, rateTerm);
+  }
+
+  updateRateTerm(id: number, rateTerm: Object) : Observable<any>{
+    return this.http.put(`${this.baseURL}/${id}`, rateTerm);
+  }
+
+  deleteRateTerm(id: number): Observable<any>{
+    return this.http.delete(`${this.baseURL}/${id}`);
+  }
+
+  getAllRateTerms(): Observable<any>{
+    return this.http.get(`${this.baseURL}`);
+  }
+
+  getRateTermById(id: number) : Observable<any>{
+    return this.http.get(`${this.baseURL}/${id}`)
   }
 }

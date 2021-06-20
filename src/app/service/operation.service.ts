@@ -11,7 +11,6 @@ export class OperationService {
 
   constructor( private http: HttpClient ) { }
 
-  getOperationList(): Observable<any>{
-    return this.http.get(`${this.baseURL}`)
-  }
+ 
+
 }

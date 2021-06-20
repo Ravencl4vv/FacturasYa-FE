@@ -1,14 +1,18 @@
+import { Operation } from "./operation";
+
 export class Finalcost {
     id: number;
     reason: string;
     expressedName: string;
     expressedValue: number;
+    operation: Operation;
 
-    constructor(id: number, reason: string, expressedName: string, expressedValue: number){
-        this.id = id;
-        this.reason = reason;
-        this.expressedName = expressedName;
-        this.expressedValue = expressedValue;
+    constructor(){
+        this.id = 0;
+        this.reason = "";
+        this.expressedName = "";
+        this.expressedValue = 0;
+        this.operation = new Operation();
     }
 
 }
