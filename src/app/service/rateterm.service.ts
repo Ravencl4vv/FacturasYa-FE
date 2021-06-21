@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 
 export class RatetermService {
 
-  private baseURL = 'https://localhost:8080/api/Rateterm';
+  private baseURL = 'https://facturasya.herokuapp.com/api/rateTerms';
 
   constructor( private http: HttpClient ) { }
 
