@@ -18,9 +18,12 @@ import { DeleteInitialcostComponent } from './component/initialcost/delete-initi
 import { CreateFinalcostComponent } from './component/finalcost/create-finalcost/create-finalcost.component';
 import { DeleteFinalcostComponent } from './component/finalcost/delete-finalcost/delete-finalcost.component';
 import { UpdateFinalcostComponent } from './component/finalcost/update-finalcost/update-finalcost.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
+  {path: '', component: LoginComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'create-user', component: CreateUserComponent},
   {path: 'update-user', component: UpdateUserComponent},
   {path: 'delete-user', component: DeleteUserComponent},

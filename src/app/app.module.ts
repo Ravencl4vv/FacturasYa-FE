@@ -21,6 +21,7 @@ import { DeleteInitialcostComponent } from './component/initialcost/delete-initi
 import { DeleteFinalcostComponent } from './component/finalcost/delete-finalcost/delete-finalcost.component';
 import { UpdateFinalcostComponent } from './component/finalcost/update-finalcost/update-finalcost.component';
 import { CreateFinalcostComponent } from './component/finalcost/create-finalcost/create-finalcost.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CreateFinalcostComponent } from './component/finalcost/create-finalcost
     DeleteInitialcostComponent,
     DeleteFinalcostComponent,
     UpdateFinalcostComponent,
-    CreateFinalcostComponent
+    CreateFinalcostComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
